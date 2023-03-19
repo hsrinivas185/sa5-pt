@@ -1,0 +1,29 @@
+<h1>Tracks</h1>
+<table class="table table-striped table-hover">
+  <thead class="table-dark">
+    <tr>
+      <th>Tracks</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @tracks.each do |track| %>
+      <tr>
+        <td><%= track.title %></td>
+        <td class="text-nowrap">
+          <%= link_to 'show', album_track_path(@album, track), class: 'btn btn-sm btn-secondary' %>
+          <%= link_to 'edit', edit_album_track_path(@album, track), class: 'btn btn-secondary btn-sm' %>
+          <%= button_to 'destroy', album_track_path(@album, track), method: :delete, data: { turbo: false }, class: 'btn btn-secondary btn-sm', form: { class: 'd-inline' } %>
+        </td>
+
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<p>
+  <%= link_to 'Back to album', album_path(@album), class: 'btn btn-secondary' %>
+</p>
+<p>
+  <%= link_to "New Track", new_album_track_path(@album), class: "btn btn-secondary"%>
+</p>

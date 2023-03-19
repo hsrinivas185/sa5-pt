@@ -1,0 +1,10 @@
+<h1>Edit Track</h1>
+<%= bootstrap_form_with model: @track, method: :patch, url: album_track_path(@album, @track), data: { turbo: false } do |f| %>
+  <%= f.text_field :title %>
+  <%= f.number_field :lenght %>
+  
+  <%= f.submit %>
+<% end %>
+<p class="mt-3">
+  <%= link_to 'Cancel', album_tracks_path(@album), class: 'btn btn-secondary' %>
+</p>
