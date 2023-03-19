@@ -10,9 +10,10 @@
   <%= @album.artist %>
 </p>
 
+
 <p>
   <%= link_to 'Edit', edit_album_path(@album) %> |
-  Tracklist
+  <%= link_to 'Tracklist', album_tracks_path(@album)%>
 </p>
 
 <p class="border-top border-light pt-2 mt-4">

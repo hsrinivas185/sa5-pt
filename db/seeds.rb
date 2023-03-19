@@ -15,17 +15,20 @@ dsotm = Album.create!(
 
 Track.create!(
   title: 'Speak to Me / Breathe',
-  length: (3 * 60) + 58
+  length: (3 * 60) + 58,
+  album: dsotm
 )
 
 Track.create!(
   title: 'On the Run',
-  length: (3 * 60) + 35
+  length: (3 * 60) + 35,
+  album: dsotm
 )
 
 Track.create!(
   title: 'Time',
-  length: (7 * 60) + 5
+  length: (7 * 60) + 5,
+  album: dsotm
 )
 
 # Rumours
@@ -37,17 +40,20 @@ rumours = Album.create!(
 
 Track.create!(
   title: 'Second Hand News',
-  length: (2 * 60) + 48
+  length: (2 * 60) + 48,
+  album: rumours
 )
 
 Track.create!(
   title: 'Dreams',
-  length: (4 * 60) + 39
+  length: (4 * 60) + 39,
+  album: rumours
 )
 
 Track.create!(
   title: 'Never Going Back Again',
-  length: (2 * 60) + 14
+  length: (2 * 60) + 14,
+  album: rumours
 )
 
 # Abbey Road
@@ -59,15 +65,18 @@ abbeyrd = Album.create!(
 
 Track.create!(
   title: 'Come Together',
-  length: (4 * 60) + 19
+  length: (4 * 60) + 19,
+  album: abbeyrd
 )
 
 Track.create!(
   title: 'Something',
-  length: (3 * 60) + 3
+  length: (3 * 60) + 3,
+  album: abbeyrd
 )
 
 Track.create!(
   title: "Maxwell's Silver Hammer",
-  length: (3 * 60) + 27
+  length: (3 * 60) + 27,
+  album: abbeyrd
 )
